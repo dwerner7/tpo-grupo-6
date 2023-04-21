@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+.title{
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: show 5s forwards;
+}
+
+.whatsapp-icon{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    
+}
+
+.libros{
+    display: grid;
+    /* grid-template-columns: repeat(5,1fr) ; */
+    grid-template-columns: repeat(2,1fr) ;
+    padding: 20px;
+    row-gap: 10px;
+}
+.libro {
+    background-color: white;
+    width: 200px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 24px;
+    margin: 8px;
+    border-radius: 4px;
+    
+    transition: background-color .5s; 
+
+    animation: librosGrow 1.5s;
+}
+
+
+.libro:hover {
+    background-color: rgb(248, 242, 158);
+    transform: scale(110%,110%);
+    
+}
+
+
+
+.autor {
+    color: rgb(44, 43, 43);
+}
+
+.titulo{
+    padding: 5px 5px 10px 5px;
+}
+
+.precio{
+    padding: 5px;
+}
+
+
+.libro img {
+    align-self: center;
+    width: 150px;
+    height: 250px;
+    border-radius: 4px;
+}
+
+
+/*hacer las media query con los 3 breakpoints para 3 tamaños de pantalla*/
+@media(min-width:600px){ /*cuando mi pantalla tiene de 600px o más*/
+  .libros{
+    grid-template-columns: repeat(3,1fr);
+  }
+}
+
+@media(min-width:900px){
+    .libros{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+@media(min-width:1200px){
+    .libros{
+        grid-template-columns: repeat(5,1fr);
+    }
+}
+
+/*animaciones libros y titulo*/
+
+@keyframes librosGrow{
+    from{
+        transform: scale(.3);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes show{
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+
