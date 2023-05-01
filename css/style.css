@@ -12,7 +12,7 @@ body{
     min-height: 100%;
 }
 
-.title{
+.title-productos{
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     animation: show 5s forwards;
 }
@@ -21,10 +21,15 @@ body{
     position: fixed;
     right: 0px;
     bottom: 0px;
-    
+     
 }
 
-.libros{
+.whatsapp-icon img{
+    border-radius: 50%; 
+    width: 70px;
+}
+
+.container-libros{
     display: grid;
     /* grid-template-columns: repeat(5,1fr) ; */
     grid-template-columns: repeat(2,1fr) ;
@@ -47,7 +52,7 @@ body{
 
 
 .libro:hover {
-    background-color: rgb(248, 242, 158);
+    background-color: rgb(217, 163, 228);
     transform: scale(110%,110%);
     
 }
@@ -77,19 +82,19 @@ body{
 
 /*hacer las media query con los 3 breakpoints para 3 tamaños de pantalla*/
 @media(min-width:600px){ /*cuando mi pantalla tiene de 600px o más*/
-  .libros{
+  .container-libros{
     grid-template-columns: repeat(3,1fr);
   }
 }
 
 @media(min-width:900px){
-    .libros{
+    .container-libros{
         grid-template-columns: repeat(4,1fr);
     }
 }
 
 @media(min-width:1200px){
-    .libros{
+    .container-libros{
         grid-template-columns: repeat(5,1fr);
     }
 }
