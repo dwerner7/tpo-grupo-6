@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario-newsletter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form id="formulario" method="post">
+        <fieldset>
+        <legend>Datos del cliente</legend>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required>
+        <br>
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono"><br>
+        <br>
+        <label for="birthdate">Fecha de nacimiento(dd/mm/aaaa):</label>
+        <input type="date" id="birthdate" name="birthdate">  
+        </fieldset>
+        <br>
+        <fieldset>
+        <legend>Datos del libro</legend>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <br>
+        <label for="autor">Autor:</label>
+        <input type="text" id="autor" name="autor" required>
+        <br>
+        <label for="editorial">Editorial:</label>
+        <input type="text" id="editorial" name="editorial">
+        <br>
+        <p>¿Qué tipo de consulta desea realizar?</p>
+        <input type="radio" id="busqueda" name="consulta" value="busqueda" required>
+        <label for="busqueda">Búsqueda de un titulo en particular que no se encuentra en el catálogo </label>
+        <br>
+        <input type="radio" id="precio" name="consulta" value="precio">
+        <label for="precio">Disponibilidad y precio</label>
+        <br>
+        <input type="radio" id="regalo" name="consulta" value="regalo">
+        <label for="regalo">Regalo (compra y envio)</label>
+        <br>
+        <br>
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+        <br>
+        <button type="submit">Enviar</button>
+        </form>
+        <br>
+    </fieldset>
+
+    <fieldset>
+    <div id="newsletter">
+        <h3>¡Suscríbete a nuestro newsletter para recibir todas las novedades!</h3>
+        <form id="formulario-newsletter">
+        <label for="email-newsletter">Correo electrónico:</label>
+        <input type="email" id="email-newsletter" name="email-newsletter" required>
+        <br>
+        <button type="submit">Suscribirse</button>
+        </form>
+    </div>
+    </fieldset>
+        <script src="style.js"></script>
+</body>
+</html>
