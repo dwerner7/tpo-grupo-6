@@ -5,10 +5,9 @@ function validarFormularioContacto() {
     // Obtener los valores ingresados por el usuario y recortar
     // los posibles espacios en blanco al principio y al final.
     const nombre = document.getElementById("nombre").value.trim();
-    console.log(nombre);
     const email = document.getElementById("email").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
-    
+
     const titulo = document.getElementById("titulo").value.trim();
     const autor = document.getElementById("autor").value.trim();
     const editorial = document.getElementById("editorial").value.trim();
