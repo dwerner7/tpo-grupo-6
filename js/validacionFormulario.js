@@ -1,19 +1,20 @@
 //no se como validar la fecha, ponerle un max y min
 //validar el mail
 
-function validarFormulario() {
+function validarFormularioContacto() {
     // Obtener los valores ingresados por el usuario y recortar
     // los posibles espacios en blanco al principio y al final.
     const nombre = document.getElementById("nombre").value.trim();
+    console.log(nombre);
     const email = document.getElementById("email").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
-    const emailNewslettter = document.getElementById("email-newsletter").value.trim();
+    
     const titulo = document.getElementById("titulo").value.trim();
     const autor = document.getElementById("autor").value.trim();
     const editorial = document.getElementById("editorial").value.trim();
 
     // Verificar si algún campo está en blanco
-    if (nombre === "" || email === "" || telefono === "" || emailNewslettter === "" || titulo === "" || autor === "" || editorial === "") {
+    if (nombre === "" || email === "" || telefono === "" || titulo === "" || autor === "" || editorial === "") {
         alert("Por favor, complete todos los campos del formulario.");
         return false;
     }
@@ -66,4 +67,19 @@ function validarFormulario() {
   alert("Formulario enviado correctamente.");
   return true;
 
+}
+
+
+function validarFormularioNewsletter(){
+  const emailNewslettter = document.getElementById("email-newsletter").value.trim();
+
+  // Verificar si algún campo está en blanco
+  if (emailNewslettter === "") {
+    alert("Por favor, complete todos los campos del formulario.");
+    return false;
+}
+
+    // Si todas las validaciones son exitosas, enviar el formulario
+    alert("Formulario enviado correctamente.");
+    return true;
 }

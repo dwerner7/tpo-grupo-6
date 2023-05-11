@@ -10,7 +10,8 @@
     <script src="js/plugins/anime.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="icon" href="favicon/logo-libro.ico" type="image/x-icon">
-    
+    <script src="js/validacionFormulario.js"></script>
+
     
     <title>Contacto / Newsletter</title>
     
@@ -63,7 +64,7 @@
 
     <main class="main-formulario">
         <!-- method="post" -->
-    <form id="formulario" onsubmit="return validarFormulario()">
+    <form id="formulario" onsubmit="return validarFormularioContacto()">
         <fieldset class="container-datos">
         <legend>Datos del cliente</legend>
         <div class="dato">
@@ -126,7 +127,7 @@
     <fieldset class="container-datos">
     <div id="newsletter">
         <h3>¡Suscríbete a nuestro newsletter para recibir todas las novedades!</h3>
-        <form id="formulario-newsletter" onsubmit="return validarFormulario()">
+        <form id="formulario-newsletter" onsubmit="return validarFormularioNewsletter()">
             <div class="dato"> 
                 <label for="email-newsletter">Correo electrónico:</label>
                 <input type="email" id="email-newsletter" name="email-newsletter" required>
@@ -135,8 +136,8 @@
         <button class="boton" type="submit" value="Enviar">Suscribirse</button>
         </form>
     </div>
-    </fieldset>
-        <script src="validacion.js"></script>
+</fieldset>
+        <!-- <script src="validacion.js"></script> -->
     </main>
 
     <footer class="footer">
@@ -190,7 +191,6 @@
         
     </footer>
     
-    <script src="js/validacionFormulario.js"></script>
 </body>
 
 </html>
