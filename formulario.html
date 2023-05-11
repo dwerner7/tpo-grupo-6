@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/363b4ef9d0.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type= "text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/plugins/anime.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="icon" href="favicon/logo-libro.ico" type="image/x-icon">
+    
+    <title>Contacto / Newsletter</title>
+    
+</head>
+<body>
+
+    <header class = "header"> 
+        <nav class="nav">
+            <div class="container-nav">
+                    <div class="container-contacto">
+                        <div class ="contacto">
+                            <ul class="nav-contacto">
+                                <li>Teléfonos:<a href="#" class="phone">54-11-4362-4444/ 8018</a></li>
+                                <li>Email:<a href="#" class="email">tuslibros@bookshop.com.ar</a></li>
+                            </ul>
+                        </div>      
+                        
+
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+
+                    </div>    
+                
+             
+                    <h1 class="animate__animated animate__backInLeft">BOOK SHOP</h1>
+
+                
+                    
+                    <div class="nav-items">
+                            <!-- <img src="img/logo.png" alt="aca va el logo" class="imagen-logo"> -->
+                            <img id="logo" src="img/logo-libro.png" alt="Logo Book Shop">
+                            <!-- <a href="img/logo.png" class="logo nav-link"></a>             -->
+                            <button class="nav-toggle" aria-label="Abrir menú">
+                                <i class="fas fa-bars"></i>
+                            </button>
+                            <ul class="nav-menu">
+                                <li class="menu-item"><a href="index.html">Home</a></li>
+                                <li class="menu-item"><a href="productos.html">Productos</a></li>
+                                <li class="menu-item"><a href="#sucursales">Sucursales</a></li>
+                                <li class="menu-item"><a href="formulario.html">Contacto</a></li>
+                            </ul>
+                    </div>              
+            </div>
+        </nav>
+    </header>
+
+    <main class="main-formulario">
+    <form id="formulario" method="post">
+        <fieldset class="container-datos">
+        <legend>Datos del cliente</legend>
+        <div class="dato">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="dato">
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div class="dato">
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono"><br>
+        </div>
+        <div class="dato">
+            <label for="birthDate">Fecha de nacimiento(dd/mm/aaaa):</label>
+            <input type="date" id="birthDate" name="birthDate">  
+        </div>
+        </fieldset>
+        
+        <fieldset class="container-datos">
+        <legend>Datos del libro</legend>
+        <div class="dato">
+            <label for="titulo">Título:</label>
+            <input type="text" id="titulo" name="titulo" required>
+        </div>
+        <div class="dato">
+            <label for="autor">Autor:</label>
+            <input type="text" id="autor" name="autor" required>
+        </div>
+        <div class="dato">
+            <label for="editorial">Editorial:</label>
+            <input type="text" id="editorial" name="editorial">
+        </div>
+        <div class="dato">
+            <p>¿Qué tipo de consulta desea realizar?</p>
+            <div class="radio">
+                <input type="radio" id="busqueda" name="consulta" value="busqueda" required>
+                <label for="busqueda">Búsqueda de un titulo en particular que no se encuentra en el catálogo </label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="precio" name="consulta" value="precio">
+                <label for="precio">Disponibilidad y precio</label>
+            </div>
+            <div class="radio">
+                <input type="radio" id="regalo" name="consulta" value="regalo">
+                <label for="regalo">Regalo (compra y envio)</label>
+            </div>
+        
+            <div class="dato">
+                <label for="comentarios">Comentarios:</label>
+                <textarea id="comentarios" name="comentarios" cols="30" rows="8"></textarea>
+            </div>
+        </div>
+
+        <button class="boton" type="submit">Enviar</button>
+        </form>
+    </fieldset>
+
+    <fieldset class="container-datos">
+    <div id="newsletter">
+        <h3>¡Suscríbete a nuestro newsletter para recibir todas las novedades!</h3>
+        <form id="formulario-newsletter">
+            <div class="dato"> 
+                <label for="email-newsletter">Correo electrónico:</label>
+                <input type="email" id="email-newsletter" name="email-newsletter" required>
+            </div>
+
+        <button class="boton" type="submit">Suscribirse</button>
+        </form>
+    </div>
+    </fieldset>
+        <script src="validacion.js"></script>
+    </main>
+
+    <footer class="footer">
+        <div class="container-footer">
+            <div class="row-footer">
+                <div class= "footer-col">
+                    <h4 class="title">Book shop</h4>
+                    <ul>
+                        <li><a href="home.html">Nosotros</a> </li>
+                        <li><a href="productos.html">Nuestros Productos</a></li>
+                        <li><a href="sucursales.html">Nuestras Sucursales</a></li>
+                        <li><a href="contacto.html">Contactate con Nosotros</a></li>
+                    </ul>
+                </div>   
+
+                <div class="footer-col">
+                    <h4 class="title">Guía de Compra</h4>
+                    <ul>
+                        <li><a href="#">Atención al Cliente</a></li>
+                        <li><a href="#">Promociones</a></li>
+                        <li><a href="#">Costos y tiempos de envío</a></li>
+                        <li><a href="#">Devoluciones</a></li>
+                        <li><a href="#">Formas de pagos</a></li>
+                    </ul>
+                </div>    
+                    
+
+                <div class="footer-col">
+                    <h4 class="title">Catálogos</h4>
+                    <ul>
+                        <li><a href="#">Libros</a></li>
+                        <li><a href="#">Enciclopedias</a></li>
+                        <li><a href="#">Temática</a></li>
+                        <li><a href="#">Búsqueda avanzada</a></li>
+                    </ul>
+                </div>    
+                    
+
+                <div class="footer-col">
+                    <h4 class="title">Síguenos</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>               
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+
+</html>

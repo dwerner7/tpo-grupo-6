@@ -1,0 +1,545 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{      
+    /* padding: 150px  0 100px 0; */
+    padding: 0 0 135px 0;
+    margin: 0 auto;
+    font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    /*max-width: 992px;*/
+}
+
+
+.container-nav{
+    height: 80px;
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+.container-contacto {
+    background-color: #2e2e2e;   
+    margin: 0 auto;
+}
+
+.nav-contacto li{
+    list-style-type: none;
+    display: inline-block;
+    align-items: center;
+    color: #ffffff;
+    /* margin-right: 10px; */
+}
+
+.nav-contacto li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+   line-height: 30px;
+   font-size:12px;
+}
+
+.nav-contacto li a{
+    color: #32dbc6;
+    margin-left: 5px;
+}
+
+
+.nav-contacto a{
+    text-decoration: none;
+    align-items:center;
+}
+
+/*alinear a cada elemento uno al lado del otro*/
+.container-contacto,
+.nav-items {
+    display: flex;
+    justify-content:space-between;   
+}
+
+
+.nav-items {
+    background-color: #d4d4d4;  
+}
+
+#logo{
+    width: 100px;
+    padding-left: 15px;
+}
+
+
+
+/*alinear a cada elemento uno al lado del otro*/
+.nav-menu {
+    display: flex;
+}
+
+
+.menu-item a:hover{
+    color: #32dbc6;
+}
+
+/*ocultar la hamburguesa*/
+.nav-toggle{
+    display:none;
+}
+
+/*eliminar los subrayados de la lista del menu*/
+.nav-menu a{
+    text-decoration: none;    
+}
+
+/*eliminar viñetas de los items del menu*/
+/* .nav-menu li{
+    list-style: none;    
+
+} */
+
+/*Estilos a los menu de navegacion*/
+.menu-item{
+    font-size: 12px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;/*extender el contenido hacia la derecha*/
+}
+
+
+/*estilos a los iconos de redes sociales*/
+.social-links a {
+    display: inline-block;
+    align-items: center;
+    text-align: center;  
+    height:40px;
+    width:40px;
+    /* margin: 0;    */
+    line-height: 40px;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    color: #ffffff;
+    margin: 0 10px 0 0;
+    
+}
+
+
+/*hover a las redes sociales*/
+.social-links a:hover{
+    background-color: #32dbc6;
+    transition: all 0.5s ease;
+    
+}
+
+/*tamaño del logo*/
+/* .logo {
+    width:20px;
+    height:20px;
+
+} */
+
+
+/*Efecto al nombre bookishop al cargarse la pagina*/
+.animate__animated{
+    text-align: center;
+    background:linear-gradient( to right, #f72585, #3a0ca3 );
+    padding: 10px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px; 
+    color:#f1faee;
+ }
+
+
+ /*PENDIENTE DE CENTRAR LA IMAGEN DEL LOGO*/
+ .imagen-logo{
+     width:6rem;
+     height:5rem;
+     display:flex;
+     align-items: center;
+     justify-content:center;
+    
+ }
+
+ 
+
+ 
+
+
+
+ .nosotros .acerca-de-nosotros{
+     font-size:2rem;
+     font-weight:400;
+     margin-top: 0;
+     margin-bottom:1.2rem;
+     color: #000; 
+
+ }
+
+/******************************************************************/
+
+.footer{
+    background-color: #24262b;
+    padding:20px 0;
+    line-height:1.5;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container-footer{
+    max-width: 1400px;
+    margin: auto;
+}
+
+
+.row-footer{
+    margin-left: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+ul {
+    list-style: none;
+}
+
+
+.footer-col{
+    width:100%;
+    
+    
+
+}
+
+.footer-col h4 {
+    font-size:18px;
+    color: #ffffff;
+    text-transform:capitalize;
+    margin-bottom:15px;
+    margin-top: 35px;
+    font-weight:500;
+    /*position:relative;*//*hace que el footer se vea cuando hago scroll*/
+}
+
+.footer-col h4::before{
+    content: '';
+    position: absolute;
+    left : 0;
+    bottom: -10px;
+    /* background-color: #e91e63; *//*no se bien que seria esto porque hace una linea de ese color*/ 
+    height: 2px;
+    /* box-sizing: border-box; */
+    width:50px;
+}
+
+.footer-col ul li:not(:last-child){
+    margin-bottom:10px;
+}
+
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color:#ffff;
+    text-decoration: none;
+    font-weight:300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+
+}
+
+
+.footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+}
+
+.footer-col .social-links a{
+    display: inline-block;
+    height:40px;
+    width:40px;
+    background-color: rgba(255,255,255,0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+
+
+
+.footer-col .social-links a:hover{
+    color: #24262b;
+    background-color:#ffffff;
+    
+}
+
+
+
+/*responsive*/
+/* @media (max-width: 767px){
+    .footer-col {
+        width:50%;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (max-width: 574px){
+    .footer-col {
+        width:100%;
+     }
+
+} */
+/****************************************************************/
+
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+.main-productos{
+    /* padding: 0 0 50px 0; */
+    padding-bottom: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.title-productos{
+    padding: 15px;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    animation: show 5s forwards;
+}
+
+.whatsapp-icon{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    
+} 
+
+.whatsapp-icon img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+.container-libros{
+    display: grid;
+    /* grid-template-columns: repeat(5,1fr) ; */
+    grid-template-columns: repeat(2,1fr) ;
+    padding: 20px;
+    row-gap: 10px;
+}
+.libro {
+    background-color: white;
+    width: 200px;
+    box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+    font-weight: bold;
+    padding: 24px;
+    margin: 8px;
+    border-radius: 4px;
+    
+    transition: background-color .5s; 
+
+    animation: librosGrow 1.5s;
+}
+
+
+.libro:hover {
+    background-color: rgb(217, 163, 228);
+    transform: scale(110%,110%);
+    
+}
+
+
+
+.autor-libro{
+    color: rgb(44, 43, 43);
+}
+
+.titulo-libro{
+    padding: 5px 5px 10px 5px;
+}
+
+.precio-libro{
+    padding: 5px;
+}
+
+
+.libro img {
+    align-self: center;
+    width: 150px;
+    height: 250px;
+    border-radius: 4px;
+}
+/************************************************************/
+
+/*Home*/
+.main-home{
+    padding: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.info-home{
+    margin: 1.5rem auto;
+    padding: 1rem;
+    /* rgb(39, 2, 253) */
+    border: #d9cff3 solid 2px;
+    border-radius: 5%;
+    background-color: #d9cff3; 
+    width: 85%;  
+    text-align: justify;
+}
+
+.subtitulo-home {
+    /* margin-top: 1.0rem; */
+    margin-bottom: 0.5rem;
+    text-align: center;
+    /* padding: 0; */
+    color: #3a0ca3;
+
+}
+
+/* .titulo-home{
+    text-align: center;
+} */
+
+.sucursales-home li{
+    list-style-type: disc;
+    margin-left: 2.5rem;    
+    text-align: left;
+}
+
+
+/*******************************/
+/*Formulario*/
+
+.main-formulario{
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.container-datos{
+    margin: 35px auto;
+    padding: 15px;
+    /* background-color: #c9b8d1; */
+    background-color: #d9cff3; 
+    width: 95%;
+}
+
+
+
+legend{
+    font-weight: bold;
+}
+
+.dato{
+    padding: 10px 0;
+}
+
+.boton{
+    margin: 5px 0;
+    padding: 5px;
+    /* border: #5e4792 solid 2px; */
+    border: black solid 2px;
+    border-radius: 5px;
+    /* background-color: rgb(214, 197, 228); */
+    background-color: white;
+    font-weight: bold;
+}
+
+#comentarios{
+    display: block;
+}
+
+
+/*animaciones libros y titulo*/
+
+@keyframes librosGrow{
+    from{
+        transform: scale(.3);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+
+@keyframes show{
+    to{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+}
+
+
+
+/*hacer las media query con los 3 breakpoints para 3 tamaños de pantalla*/
+
+
+@media(min-width:600px) {
+    /*cuando mi pantalla tiene de 600px o más*/
+    .footer-col {
+        width:50%;
+        margin-bottom: 30px;
+        
+    }
+    .container-libros{
+        grid-template-columns: repeat(3,1fr);
+    }
+     /* .info-home{
+        width: 85%;   
+    } */
+
+    .container-datos{
+        width: 75%;
+        /* margin: 15px auto; */
+        
+    }
+}
+
+@media(min-width:900px) {
+    .footer-col {
+        width:50%;
+        margin-bottom: 30px;
+    }
+    .container-libros{
+        grid-template-columns: repeat(4,1fr);
+    }
+
+    /* .info-home{
+        width: 85%;
+        
+    } */
+    .container-datos{
+        width: 75%;
+        /* margin: 15px auto; */
+        
+    }
+}
+/*
+ @media(min-width:1200px) {
+    .footer-col {
+        width :25%;
+        padding: 0 15px;
+    }
+    .container-libros{
+        grid-template-columns: repeat(5,1fr);
+    }
+     .info-home{
+        width: 75%;
+    
+    }
+    .container-datos{
+        width: 50%;   
+    }
+} */
