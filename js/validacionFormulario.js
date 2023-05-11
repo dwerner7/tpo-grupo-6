@@ -1,4 +1,4 @@
-//no se como validar la fecha, ponerle un max y min
+
 //validar el mail
 
 function validarFormularioContacto() {
@@ -7,13 +7,14 @@ function validarFormularioContacto() {
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
+    const fecha = document.getElementById("birthDate").value.trim();
 
     const titulo = document.getElementById("titulo").value.trim();
     const autor = document.getElementById("autor").value.trim();
     const editorial = document.getElementById("editorial").value.trim();
 
     // Verificar si algún campo está en blanco
-    if (nombre === "" || email === "" || telefono === "" || titulo === "" || autor === "" || editorial === "") {
+    if (nombre === "" || email === "" || telefono === "" || fecha === "" || titulo === "" || autor === "" || editorial === "") {
         alert("Por favor, complete todos los campos del formulario.");
         return false;
     }
@@ -25,6 +26,13 @@ function validarFormularioContacto() {
           alert("El campo 'nombre' solo puede contener caracteres alfabéticos y espacios.");
           return false;
         }
+      }
+
+      //Verificar que la fecha sea mayor al año 1910 y menor al año 2010
+      const anio = fecha[0]+fecha[1]+fecha[2]+fecha[3];
+      if (anio < 1910 || anio > 2010){
+        alert("Ingrese una fecha válida");
+        return false;
       }
 
       //el libro puede contener caracteres alfanumericos asi que no lo valido
