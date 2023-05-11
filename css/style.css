@@ -386,8 +386,8 @@ body{
     padding: 1.5rem;
     font-family: 'Poppins', sans-serif;
     display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
     text-align: center;
 }
 
@@ -408,12 +408,14 @@ body{
     text-align: center;
     /* padding: 0; */
     color: #3a0ca3;
+    /* display: block; */
 
 }
-
-/* .titulo-home{
-    text-align: center;
-} */
+/* 
+ .titulo-home{
+    text-align: center; 
+    display: block;
+}  */
 
 .sucursales-home li{
     list-style-type: disc;
