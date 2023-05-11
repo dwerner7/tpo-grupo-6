@@ -389,6 +389,8 @@ body{
     flex-direction: column;
     /* flex-wrap: wrap; */
     text-align: center;
+
+    /* display: grid; */
 }
 
 .info-home{
@@ -522,6 +524,12 @@ legend{
         width: 85%;
         
     } */
+
+    .lista-valores{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+
     .container-datos{
         width: 75%;
         /* margin: 15px auto; */
@@ -541,6 +549,12 @@ legend{
         width: 75%;
     
     }
+
+    .lista-valores{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    
     .container-datos{
         width: 50%;   
     }
