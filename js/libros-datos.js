@@ -4,7 +4,7 @@ let data= [
         "titulo": "Percy Jackson y el ladrón del rayo",
         "autor": "Rick Riordan",
         "precio": "$ 5.556",
-        "portada": "img/percy jackson y el ladron del rayo.jpg"
+        "portada": "img/percy-jackson-y-el-ladron-del-rayo.jpg"
         //editorial??
     },
     {
@@ -12,35 +12,35 @@ let data= [
         "titulo": "La Gioconda y Leonardo",
         "autor": "Daniel López Rosetti",
         "precio": "$ 4.940",
-        "portada": "img/la gioconda y leonardo.jpg"
+        "portada": "img/la-gioconda-y-leonardo.jpg"
     },
     {
         "id": 3,
         "titulo": "La Balada de Nunca Jamás",
         "autor": "Stephanie Garber",
         "precio": "$ 6.290",
-        "portada": "img/LA BALADA DE NUNCA JAMÁS.jpg"
+        "portada": "img/LA-BALADA-DE-NUNCA-JAMÁS.jpg"
     },
     {
         "id": 4,
         "titulo": "El nudo",
         "autor": "Carlos Pagni",
         "precio": "$ 8.900",
-        "portada": "img/el nudo.jpg"
+        "portada": "img/el-nudo.jpg"
     },
     {
         "id": 5,
         "titulo": "Harry Potter y la piedra filosofal",
         "autor": "J. K. Rowling",
         "precio": "$ 10.199",
-        "portada": "img/Harry Potter y la piedra filosofal.jpg"
+        "portada": "img/Harry-Potter-y-la-piedra-filosofal.jpg"
     },
     {
         "id": 6,
         "titulo": "La paciencia del agua sobre cada piedra",
         "autor": "Alejandra Kamiya",
         "precio": "$ 3.800",
-        "portada": "img/La paciencia del agua sobre cada piedra.jpg"
+        "portada": "img/La-paciencia-del-agua-sobre-cada-piedra.jpg"
     },
     {
         "id": 7,
@@ -54,7 +54,7 @@ let data= [
         "titulo": "Los enclaves dorados",
         "autor": "Naomi Novik",
         "precio": "$ 6.290",
-        "portada": "img/los enclaves dorados.jpg"
+        "portada": "img/los-enclaves-dorados.jpg"
     },
     {
         "id": 9,
@@ -68,7 +68,7 @@ let data= [
         "titulo": "Harry Potter y el legado maldito",
         "autor": "J. K. Rowling",
         "precio": "$ 5.168",
-        "portada": "img/Harry Potter y el legado maldito.jpg"
+        "portada": "img/Harry-Potter-y-el-legado-maldito.jpg"
     }
 
 ]

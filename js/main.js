@@ -21,9 +21,7 @@ let nav=`<nav class="nav">
             <h1 class="animate__animated animate__backInLeft">BOOK SHOP</h1>
         
             <div class="nav-items">
-                <!-- <img src="img/logo.png" alt="aca va el logo" class="imagen-logo"> -->
-                <!-- <a href="img/logo.png" class="logo nav-link"></a>             -->
-                <img id="logo" src="img/logo-libro.png" alt="Logo Book Shop">
+            <a href="index.html"><img id="logo" src="img/logo-libro.png" alt="Logo Book Shop"></a>
                 <button class="nav-toggle" aria-label="Abrir menú">
                     <i class="fas fa-bars"></i>
                 </button>
@@ -31,7 +29,7 @@ let nav=`<nav class="nav">
                     <li class="menu-item"><a href="index.html">Home</a></li>
                     <li class="menu-item"><a href="productos.html">Productos</a></li>
                     <li class="menu-item"><a href="#sucursales">Sucursales</a></li>
-                    <li class="menu-item"><a href="#contacto">Contacto</a></li>
+                    <li class="menu-item"><a href="formulario.html">Contacto</a></li>
                 </ul>
             </div>              
         </div>
