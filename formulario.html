@@ -63,7 +63,7 @@
     </header>
 
     <main class="main-formulario">
-        <!-- method="post" -->
+    
     <form id="formulario" onsubmit="return validarFormularioContacto()">
         <fieldset class="container-datos">
         <legend>Datos del cliente</legend>
@@ -80,8 +80,8 @@
             <input type="tel" id="telefono" name="telefono"><br>
         </div>
         <div class="dato">
-            <label for="birthDate">Fecha de nacimiento(dd/mm/aaaa):</label>
-            <input type="date" id="birthDate" name="birthDate">  
+            <label for="fechaNac">Fecha de nacimiento (dd/mm/aaaa):</label>
+            <input type="date" id="fechaNac" name="fechaNac">  
         </div>
         </fieldset>
         
@@ -102,7 +102,7 @@
         <div class="dato">
             <p>¿Qué tipo de consulta desea realizar?</p>
             <div class="radio">
-                <input type="radio" id="busqueda" name="consulta" value="busqueda" required checked>
+                <input type="radio" id="busqueda" name="consulta" value="busqueda">
                 <label for="busqueda">Búsqueda de un titulo en particular que no se encuentra en el catálogo </label>
             </div>
             <div class="radio">
@@ -121,8 +121,8 @@
         </div>
 
         <button class="boton" type="submit" value="Enviar">Enviar</button>
-        </form>
-    </fieldset>
+        </fieldset>
+    </form>
 
     <fieldset class="container-datos">
     <div id="newsletter">

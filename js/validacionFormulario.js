@@ -7,7 +7,7 @@ function validarFormularioContacto() {
     const nombre = document.getElementById("nombre").value.trim();
     const email = document.getElementById("email").value.trim();
     const telefono = document.getElementById("telefono").value.trim();
-    const fecha = document.getElementById("birthDate").value.trim();
+    const fecha = document.getElementById("fechaNac").value.trim();
 
     const titulo = document.getElementById("titulo").value.trim();
     const autor = document.getElementById("autor").value.trim();
@@ -19,6 +19,7 @@ function validarFormularioContacto() {
         return false;
     }
 
+
     // Verificar si el nombre contiene solo caracteres alfabéticos y espacios
     for (let i = 0; i < nombre.length; i++) {
         let charCode = nombre.charCodeAt(i);
@@ -27,6 +28,12 @@ function validarFormularioContacto() {
           return false;
         }
       }
+
+      if (nombre.length > 30){
+        alert("El nombre ingresado es muy largo");
+        return false
+      }
+      //hacer con los otros?
 
       //Verificar que la fecha sea mayor al año 1910 y menor al año 2010
       const anio = fecha[0]+fecha[1]+fecha[2]+fecha[3];
@@ -68,7 +75,15 @@ function validarFormularioContacto() {
         }
       }
 
-      
+      //Validar radio
+      const consulta=document.getElementsByName("consulta");
+      if (consulta[0].checked == true ||
+        consulta[1].checked == true ||
+        consulta[2].checked == true) {
+      } else {  //Si ninguno está marcado....
+        alert("Seleccione el tipo de consulta que desea realizar");
+        return false
+      }
 
   // Si todas las validaciones son exitosas, enviar el formulario
   alert("Formulario enviado correctamente.");
@@ -80,7 +95,7 @@ function validarFormularioContacto() {
 function validarFormularioNewsletter(){
   const emailNewslettter = document.getElementById("email-newsletter").value.trim();
 
-  // Verificar si algún campo está en blanco
+  // Verificar si el campo está en blanco
   if (emailNewslettter === "") {
     alert("Por favor, complete todos los campos del formulario.");
     return false;
@@ -90,3 +105,4 @@ function validarFormularioNewsletter(){
     alert("Formulario enviado correctamente.");
     return true;
 }
+
