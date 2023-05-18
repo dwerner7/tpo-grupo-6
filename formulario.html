@@ -125,7 +125,7 @@
     <fieldset class="container-datos">
     <div id="newsletter">
         <h3>¡Suscríbete a nuestro newsletter para recibir todas las novedades!</h3>
-        <form id="formulario-newsletter" onsubmit="return validarFormularioNewsletter()">
+        <form id="formulario-newsletter" method="post" onsubmit="return validarFormularioNewsletter()">
             <div class="dato"> 
                 <label for="email-newsletter">Correo electrónico:</label>
                 <input type="email" id="email-newsletter" name="email-newsletter" required>
