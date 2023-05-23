@@ -6,12 +6,23 @@
     box-sizing: border-box;
 }
 
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
 .header{      
     /* padding: 150px  0 100px 0; */
-    padding: 0 0 135px 0;
+    padding: 0 0 100px 0;
     margin: 0 auto;
     font-family: "Quicksand", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     /*max-width: 992px;*/
+    /* background-color: black; */
+    background-color: #2e2e2e;   
+    /* background-color: #d4d4d4;   */
 }
 
 
@@ -21,6 +32,8 @@
     top: 0;
     left: 0;
     width: 100%;
+    
+
 }
 
 
@@ -36,24 +49,31 @@
     align-items: center;
     color: #ffffff;
     /* margin-right: 10px; */
-}
-
-.nav-contacto li{
     margin-top: 5px;
     margin-bottom: 5px;
    line-height: 30px;
    font-size:12px;
 }
 
+/* .nav-contacto li{
+    margin-top: 5px;
+    margin-bottom: 5px;
+   line-height: 30px;
+   font-size:12px;
+   
+} */
+
 .nav-contacto li a{
     color: #32dbc6;
     margin-left: 5px;
+    
 }
 
 
 .nav-contacto a{
     text-decoration: none;
     align-items:center;
+    
 }
 
 /*alinear a cada elemento uno al lado del otro*/
@@ -66,6 +86,8 @@
 
 .nav-items {
     background-color: #d4d4d4;  
+    border-top: #2e2e2e solid 2px;
+    border-bottom: #2e2e2e solid 2px;
 }
 
 #logo{
@@ -280,39 +302,20 @@ ul {
 }
 
 
-
-/*responsive*/
-/* @media (max-width: 767px){
-    .footer-col {
-        width:50%;
-        margin-bottom: 30px;
-    }
-
-}
-
-@media (max-width: 574px){
-    .footer-col {
-        width:100%;
-     }
-
-} */
 /****************************************************************/
 
-html{
-    height: 100%;
-}
 
-body{
-    min-height: 100%;
-}
 
 .main-productos{
     /* padding: 0 0 50px 0; */
     padding-bottom: 50px;
     font-family: 'Poppins', sans-serif;
+    background-color: black;
+    border-top: #2e2e2e solid 2px;
 }
 
 .title-productos{
+    color: white;
     padding: 15px;
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     animation: show 5s forwards;
@@ -337,6 +340,7 @@ body{
     row-gap: 10px;
 }
 .libro {
+    line-height: 30px;
     background-color: white;
     width: 200px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
@@ -344,7 +348,7 @@ body{
     padding: 24px;
     margin: 8px;
     border-radius: 4px;
-    
+    border: rgb(217, 163, 228) solid 2px;
     transition: background-color .5s; 
 
     animation: librosGrow 1.5s;
@@ -353,6 +357,7 @@ body{
 
 .libro:hover {
     background-color: rgb(217, 163, 228);
+    border: white solid 2px;
     transform: scale(110%,110%);
     
 }
@@ -361,14 +366,19 @@ body{
 
 .autor-libro{
     color: rgb(44, 43, 43);
+    
 }
 
 .titulo-libro{
     padding: 5px 5px 10px 5px;
+    
+    
 }
 
 .precio-libro{
     padding: 5px;
+    
+    
 }
 
 
@@ -388,19 +398,34 @@ body{
     flex-direction: column;
     /* flex-wrap: wrap; */
     text-align: center;
-
+    /* background-color: #d9cff3;  */
+    background-color: #3a0ca3; 
+    /* background-color: #9776eb;  */
     /* display: grid; */
+    border-top: #2e2e2e solid 2px;
 }
 
 .info-home{
     margin: 1.5rem auto;
     padding: 1rem;
     /* rgb(39, 2, 253) */
-    border: #d9cff3 solid 2px;
+    /* border: #d9cff3 solid 2px; */
+    border: white solid 2px;
     border-radius: 5%;
-    background-color: #d9cff3; 
+    /* background-color: #d9cff3;  */
+    background-color: black; 
+    color: white;
     width: 85%;  
     text-align: justify;
+}
+
+.parrafo-home{
+    line-height: 30px;
+}
+
+.titulo-home{
+    color: white;
+    
 }
 
 .subtitulo-home {
@@ -410,6 +435,7 @@ body{
     /* padding: 0; */
     color: #3a0ca3;
     /* display: block; */
+    line-height: 50px;
 
 }
 /* 
@@ -422,6 +448,7 @@ body{
     list-style-type: disc;
     margin-left: 2.5rem;    
     text-align: left;
+    line-height: 30px;
 }
 
 
@@ -430,7 +457,6 @@ body{
 
 .main-formulario{
     font-family: 'Poppins', sans-serif;
-    
 }
 
 .container-datos{
@@ -537,6 +563,7 @@ legend{
 }
 
  @media(min-width:1200px) {
+        
     .footer-col {
         width :25%;
         padding: 0 15px;
