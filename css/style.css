@@ -12,6 +12,7 @@ html{
 
 body{
     min-height: 100%;
+    background-color: #000;
 }
 
 .header{      
@@ -210,6 +211,8 @@ body{
     padding:20px 0;
     line-height:1.5;
     font-family: 'Poppins', sans-serif;
+    border-top: black solid 2px;
+    border-bottom: black solid 2px;
 }
 
 .container-footer{
@@ -314,6 +317,27 @@ ul {
     border-top: #2e2e2e solid 2px;
 }
 
+.buscador{
+    margin: 20px;
+}
+
+#input-busqueda{
+    width: 60%;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    border: rgb(217, 163, 228) solid 2px;
+}
+
+#btn-busqueda{
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 15%;
+    border: white solid 2px;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgb(217, 163, 228);
+}
+
 .title-productos{
     color: white;
     padding: 15px;
@@ -342,7 +366,7 @@ ul {
 .libro {
     line-height: 30px;
     background-color: white;
-    width: 200px;
+    width: 180px;/*200px;*/
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
     font-weight: bold;
     padding: 24px;
@@ -365,7 +389,8 @@ ul {
 
 
 .autor-libro{
-    color: rgb(44, 43, 43);
+    /* color: rgb(44, 43, 43); */
+    color: rgb(106, 41, 119);
     
 }
 
@@ -384,8 +409,8 @@ ul {
 
 .libro img {
     align-self: center;
-    width: 150px;
-    height: 250px;
+    width: 128px;/*150px;*/
+    height: 200px;/*250px;*/
     border-radius: 4px;
 }
 /************************************************************/
@@ -452,25 +477,32 @@ ul {
 }
 
 
-/*******************************/
+/***************************************************/
 /*Formulario*/
 
 .main-formulario{
     font-family: 'Poppins', sans-serif;
+    background-color: black;
+    color: white;
 }
 
 .container-datos{
     margin: 35px auto;
     padding: 15px;
     /* background-color: #c9b8d1; */
-    background-color: #d9cff3; 
+    /* background-color: #d9cff3;  */
+    /* background-color: black; */
+    background-color: #6d4092; 
     width: 95%;
 }
 
-
+input{
+    border: #000 solid 1px;
+}
 
 legend{
     font-weight: bold;
+    color: white;
 }
 
 .dato{
