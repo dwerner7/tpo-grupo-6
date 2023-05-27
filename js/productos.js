@@ -35,6 +35,14 @@ function buscarLibros(){
     getLibrosAxios(search);
 }
 
+function setDivs(cantidad){
+    let divs = "";
+    for (let i=1; i<=cantidad;i++){
+        divs = divs + `<div id="libro-${i}"></div>`
+    }
+    document.querySelector(".container-libros").innerHTML=divs;
+}
+
 function random(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }
@@ -45,6 +53,9 @@ const getLibrosAxios = async(busqueda) => {
         const response = await axios(`https://www.googleapis.com/books/v1/volumes?q=${busqueda}&printType=books`);
         console.log("Libros: ",response);
         console.log("Cantidad de libros encontrados: ", response.data.items.length);
+        
+        setDivs(response.data.items.length);
+
         // for(const libro of response.data.items){
             for (let i = 1; i<=response.data.items.length;i++){
             const resLibro = await axios(response.data.items[i].selfLink);
