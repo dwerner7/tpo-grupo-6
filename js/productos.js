@@ -22,17 +22,21 @@
 
 function buscarLibros(){
     let busqueda = document.getElementById("input-busqueda").value;
-    busqueda = busqueda.toLowerCase();
-    let search = "";
-    for(const letra of busqueda){
-        if(letra == " "){
-            search += "+";
-        }else {
-            search += letra;
+    if(busqueda != " "){
+        busqueda = busqueda.toLowerCase();
+        let search = "";
+        for(const letra of busqueda){
+            if(letra == " "){
+                search += "+";
+            }else {
+                search += letra;
+            }
         }
+        console.log(search);
+        getLibrosAxios(search);
+    } else {
+        getLibrosAxios("fiction");
     }
-    console.log(search);
-    getLibrosAxios(search);
 }
 
 function setDivs(cantidad){
