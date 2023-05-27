@@ -28,7 +28,7 @@ let nav=`<nav class="nav">
                 <ul class="nav-menu">
                     <li class="menu-item"><a href="index.html">Home</a></li>
                     <li class="menu-item"><a href="productos.html">Productos</a></li>
-                    <li class="menu-item"><a href="#sucursales">Sucursales</a></li>
+                    <li class="menu-item"><a href="sucursales.html">Sucursales</a></li>
                     <li class="menu-item"><a href="formulario.html">Contacto</a></li>
                 </ul>
             </div>              
