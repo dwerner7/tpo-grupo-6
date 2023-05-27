@@ -328,14 +328,23 @@ ul {
     border: rgb(217, 163, 228) solid 2px;
 }
 
-#btn-busqueda{
+#btn-busqueda, #btn-reset-busqueda{
     padding: 10px;
     margin-left: 20px;
     border-radius: 15%;
-    border: white solid 2px;
     font-weight: bold;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;   
+}
+
+#btn-busqueda{
+    border: white solid 2px;
     background-color: rgb(217, 163, 228);
+}
+
+#btn-reset-busqueda{
+    background-color: #000;
+    color: white;
+    border: rgb(217, 163, 228) solid 2px;
 }
 
 .title-productos{

@@ -20,6 +20,8 @@
 // console.log(libros);
 // document.querySelector(".main-productos").innerHTML=libros;
 
+const busquedaPorDefecto = "fiction";
+
 function buscarLibros(){
     let busqueda = document.getElementById("input-busqueda").value;
     if(busqueda != " "){
@@ -35,8 +37,14 @@ function buscarLibros(){
         console.log(search);
         getLibrosAxios(search);
     } else {
-        getLibrosAxios("fiction");
+        getLibrosAxios(busquedaPorDefecto);
     }
+}
+
+
+function resetBusqueda(){
+    getLibrosAxios(busquedaPorDefecto);
+    document.getElementById("input-busqueda").value="";
 }
 
 function setDivs(cantidad){
@@ -54,7 +62,7 @@ function random(min, max) {
 const getLibrosAxios = async(busqueda) => {
     try {
         //Juvenile Fiction     
-        const response = await axios(`https://www.googleapis.com/books/v1/volumes?q=${busqueda}&printType=books`);
+        /*const*/let response = await axios(`https://www.googleapis.com/books/v1/volumes?q=${busqueda}&printType=books`);
         console.log("Libros: ",response);
         console.log("Cantidad de libros encontrados: ", response.data.items.length);
         
@@ -90,5 +98,5 @@ const getLibrosAxios = async(busqueda) => {
 }
 
 
-getLibrosAxios("fiction");
+getLibrosAxios(busquedaPorDefecto);
 
