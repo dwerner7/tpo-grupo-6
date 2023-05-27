@@ -22,6 +22,12 @@
 
 const busquedaPorDefecto = "fiction";
 
+// function infoLibro(libroDiv){
+//     window.open(libro-info.html,"Informacion","width=120,height=300,scrollbars=NO");
+
+// }
+
+
 function buscarLibros(){
     let busqueda = document.getElementById("input-busqueda").value;
     if(busqueda != " "){
@@ -47,7 +53,7 @@ function resetBusqueda(){
     document.getElementById("input-busqueda").value="";
 }
 
-function setDivs(cantidad){
+function crearDivsLibros(cantidad){
     let divs = "";
     for (let i=1; i<=cantidad;i++){
         divs = divs + `<div id="libro-${i}"></div>`
@@ -69,9 +75,9 @@ const getLibrosAxios = async(busqueda) => {
         // setDivs(response.data.items.length);
         
         //crea los divs de los libros
-        setDivs(libros.length);
+        crearDivsLibros(libros.length);
 
-        //para cuando encuentra que a algun libro le falta info no deje un espacio vacio
+        //para cuando encuentra que a algun libro le falta info no deje un espacio vacio y siga con el siguiente
         let contadorLibros=1;
         // for(const libro of response.data.items){
             // for (let i = 1; i<=response.data.items.length;i++){
@@ -95,10 +101,10 @@ const getLibrosAxios = async(busqueda) => {
             // </div>
             //  `   
             
-            //validacion
+            //validacion para que muestre más libros
             if(libros[i]===undefined){continue;}
 
-            //validacion
+             //validacion para que muestre más libros
             if(libros[i].volumeInfo.imageLinks===undefined){continue;}
 
             //lo hice para que queda mas prolijo pero no se si hace falta
@@ -107,17 +113,32 @@ const getLibrosAxios = async(busqueda) => {
             const autor = libros[i].volumeInfo.authors[0];
             const editorial = libros[i].volumeInfo.publisher;
             
+            let tituloAcortado = "";
+            if(titulo.includes("/")){
+                for (const letra of titulo){
+                    if(letra=="/"){
+                        break;
+                    }else{
+                        tituloAcortado+=letra;
+                    }
+                }
+                console.log(tituloAcortado);
+            }else{
+                tituloAcortado=titulo;
+            }
+
+            
             //validacion
             // if(portada===undefined || titulo===undefined || autor===undefined || editorial===undefined){continue;}
 
             const libro = `       
             <div class="libro" >
-                <img src= ${portada} alt=${titulo}>
+                <img src= ${portada} alt=${tituloAcortado}>
                 <div class="infoLibro">
-                    <p class="titulo-libro"> ${titulo} </p>
-                    <p class="autor-libro"> ${autor}  </p>
-                    <h5> ${editorial} </h5> 
-                    <p class="precio-libro">$${random(3000,8000)} </p> 
+                    <p class="titulo-libro info-padding"> ${tituloAcortado} </p>
+                    <p class="autor-libro info-padding"> ${autor}  </p>
+                    <h5 class="info-padding"> ${editorial} </h5> 
+                    <p class="precio-libro info-padding">$${random(3000,8000)} </p> 
                 </div>
             </div>
              `   

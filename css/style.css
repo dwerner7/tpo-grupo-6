@@ -311,6 +311,22 @@ ul {
 }
 
 /****************************************************************/
+/*************************WHATSAPP******************************/
+/****************************************************************/
+
+.whatsapp-icon{
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+    
+} 
+
+.whatsapp-icon img{
+    border-radius: 50%;
+    width: 70px;
+}
+
+/****************************************************************/
 /*************************PRODUCTOS******************************/
 /****************************************************************/
 
@@ -359,17 +375,6 @@ ul {
     animation: show 5s forwards;
 }
 
-.whatsapp-icon{
-    position: fixed;
-    right: 0px;
-    bottom: 0px;
-    
-} 
-
-.whatsapp-icon img{
-    border-radius: 50%;
-    width: 70px;
-}
 
 .container-libros{
     display: grid;
@@ -378,9 +383,12 @@ ul {
     row-gap: 10px;
 }
 .libro {
-    line-height: 30px;
+    line-height: 25px;
     background-color: white;
     width: 180px;/*200px;*/
+    /* height: 600px; */
+    min-height: 400px;
+    max-height: 600px;
     box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
     font-weight: bold;
     padding: 24px;
@@ -405,21 +413,26 @@ ul {
 .autor-libro{
     /* color: rgb(44, 43, 43); */
     color: rgb(106, 41, 119);
+    /* padding: 10px 0 10px 5px; */
     
 }
 
-.titulo-libro{
+/* .titulo-libro{
     padding: 5px 5px 10px 5px;
     
     
-}
+} */
 
-.precio-libro{
-    padding: 5px;
+/* .precio-libro{
+    padding: 10px 0 10px 5px;
     
     
-}
+} */
 
+.info-padding{
+    /* padding: 10px 0 10px 5px; */
+    padding: 5px 5px 10px 5px;
+}
 
 .libro img {
     align-self: center;
@@ -452,7 +465,7 @@ ul {
     padding: 1rem;
     /* rgb(39, 2, 253) */
     /* border: #d9cff3 solid 2px; */
-    border: white solid 2px;
+    border: #8b6ece solid 2px;
     border-radius: 5%;
     /* background-color: #d9cff3;  */
     /* background-color: black; */
