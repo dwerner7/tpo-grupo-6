@@ -318,6 +318,7 @@ ul {
     position: fixed;
     right: 0px;
     bottom: 0px;
+    margin-right: 5px;
     
 } 
 
@@ -571,6 +572,7 @@ legend{
     padding: 15px;
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     animation: show 5s forwards;
+    margin-top: 10px;
 }
 
 .principal-sucursales {
@@ -580,6 +582,7 @@ legend{
     align-items: center;
     font-size: 0.5rem;
     max-width: 600px;
+    margin-top: 10px;
 }
 
 .tabla-sucursales {
@@ -741,6 +744,12 @@ dd {
         margin-bottom: 30px;
         
     }
+
+    .whatsapp-icon img{
+        border-radius: 50%;
+        width: 60px;
+    }
+
     .container-libros{
         grid-template-columns: repeat(3,1fr);
     }

@@ -61,6 +61,7 @@ function crearDivsLibros(cantidad){
     document.querySelector(".container-libros").innerHTML=divs;
 }
 
+//Como la api no tiene precio, puse esta función para que al menos haya algun valor
 function random(min, max) {
     return Math.round(Math.random() * (max - min) + min);
 }

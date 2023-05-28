@@ -1,12 +1,40 @@
+// document.getElementById('enviar_datos').addEventListener('click', function(){
+//     let nsucursal = esSucursal();
+//     console.log(nsucursal);
+// });
 
-function getSucursal(sucursalID){
-    // window.open(sucursal.html,"Información Sucursal");
-    console.log(sucursalID);
-    const id = sucursalID-1;
-    const sucursal = sucursalesInfo[id];
-    console.log(sucursalesInfo[id]);
+function esSucursal(){
+    if(document.getElementById('suc1').checked){
+        // return "1";
+        console.log(1);
+        getSucursal(1);
+    }
+    if(document.getElementById('suc2').checked){
+        return "2";
+    }
+    if(document.getElementById('suc3').checked){
+        return "3";
+    }
+    if(document.getElementById('suc4').checked){
+        return "4";
+    }
+    if(document.getElementById('suc5').checked){
+        return "5";
+    }
+}
+
+
+function getSucursal(id){
+    // function getSucursal(){
+    window.open(sucursal.html,"Información Sucursal","height=100%&width=100%");
+    // let id = document.getElementsByClassName("sucursalMasInfo")[0].id;
+    // console.log(id);
+    // console.log(sucursalID);
+    // let id = sucursalID-1;
+    let sucursal = sucursalesInfo[id-1];
+    console.log(sucursalesInfo[id-1]);
     console.log(sucursal);
-    let suc2=`<h2 class="title-sucursales">Sucursal ${sucursal.id}</h2>
+    let sucInfo=`<h2 class="title-sucursales">Sucursal ${sucursal.id}</h2>
     <div class="principal-sucursal">
         <section class="datos">
             <dl>
@@ -33,6 +61,7 @@ function getSucursal(sucursalID){
         </section>
     </div>`
 
-    document.querySelector(".main-sucursal").innerHTML = suc2;
+    console.log(sucInfo);
+    document.querySelector(".main-sucursal").innerHTML = sucInfo;
     
 }
