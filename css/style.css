@@ -530,6 +530,7 @@ ul {
 
 input{
     border: #000 solid 1px;
+    /* box-shadow: 0 0 16px rgba(0, 0, 0, 0.3); */
 }
 
 legend{
