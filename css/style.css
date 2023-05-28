@@ -353,7 +353,7 @@ ul {
 #btn-busqueda, #btn-reset-busqueda{
     padding: 10px;
     margin-left: 20px;
-    /* border-radius: 15%; */
+    
     font-weight: bold;
     font-family: 'Poppins', sans-serif;   
 }
