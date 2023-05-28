@@ -353,12 +353,12 @@ ul {
 #btn-busqueda, #btn-reset-busqueda{
     padding: 10px;
     margin-left: 20px;
-    border-radius: 15%;
+    /* border-radius: 15%; */
     font-weight: bold;
     font-family: 'Poppins', sans-serif;   
 }
 
-#btn-busqueda{
+/* #btn-busqueda{
     border: white solid 2px;
     background-color: rgb(217, 163, 228);
 }
@@ -367,9 +367,9 @@ ul {
     background-color: #000;
     color: white;
     border: rgb(217, 163, 228) solid 2px;
-}
+} */
 
-.title-productos{
+.titles{
     color: white;
     padding: 15px;
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
@@ -480,10 +480,10 @@ ul {
     line-height: 30px;
 }
 
-.titulo-home{
+/* .titulo-home{
     color: white;
     
-}
+} */
 
 .subtitulo-home {
     /* margin-top: 1.0rem; */
@@ -543,16 +543,16 @@ legend{
     padding: 10px 0;
 }
 
-.boton{
+/* .boton{
     margin: 5px 0;
     padding: 5px;
-    /* border: #5e4792 solid 2px; */
+    
     border: black solid 2px;
     border-radius: 5px;
-    /* background-color: rgb(214, 197, 228); */
+    
     background-color: white;
     font-weight: bold;
-}
+} */
 
 #comentarios{
     display: block;
@@ -562,18 +562,31 @@ legend{
 /******************************SUCURSALES**************************************/
 /******************************************************************************/
 
+/*Sucursales*/
+html{
+    height: 100%;
+}
+
+body{
+    min-height: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 .main-sucursales{
     font-family: 'Poppins', sans-serif;
     background-color: black;
 }
 
-.title-sucursales{
+/* .title-sucursales{
     color: white;
     padding: 15px;
     clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
     animation: show 5s forwards;
-    margin-top: 10px;
-}
+} */
 
 .principal-sucursales {
     display: flex;
@@ -582,7 +595,6 @@ legend{
     align-items: center;
     font-size: 0.5rem;
     max-width: 600px;
-    margin-top: 10px;
 }
 
 .tabla-sucursales {
@@ -612,6 +624,7 @@ legend{
     max-width: 590px;
     max-height: 600px;
     margin-bottom: 20px;
+    padding: 5px;
 }
 
 .foto, .mapa {
@@ -642,6 +655,11 @@ tr:nth-child(2n){
 tr:nth-child(2n+1){
     background-color:#ffffff;
     color:#000;
+    align-content: first baseline;
+}
+
+tr:last-child{
+    background-color: #000;
 }
 
 th{
@@ -653,7 +671,7 @@ th{
         border-bottom:#ffffff;
         border-left:#ffffff;
         border-right: #ffffff;
-        text-align: right; 
+        text-align:center; 
 }
 
 .boton{
@@ -664,7 +682,7 @@ th{
     background-color: white;
     font-weight: bold;
 }
-#boton-suc{
+/*#boton-suc{
     margin-top: 10px;
     padding: 10px;
     vertical-align: middle;
@@ -672,10 +690,11 @@ th{
     background-color: #000;
     color:#ffffff;
     border-radius: 5px;
-}
+}*/
 
-#boton-suc:hover{
-    background-color: #bbbbbb;
+.boton:hover{
+    background-color: #2e2e2e;
+    color:#ffffff;
 }
 
 #col-radio{
@@ -806,6 +825,7 @@ dd {
         margin-bottom: 10px;
         margin-right: 10px;
     }
+
 }
 
 @media(min-width:900px) {
@@ -875,6 +895,7 @@ dd {
         margin-bottom: 10px;
         margin-left:  10px;
     }
+
 }
 
  @media(min-width:1200px) {
@@ -900,7 +921,7 @@ dd {
         width: 50%;   
     }
 
-        /*estilos para sucursales */
+    /*estilos para sucursales */
     .principal-sucursales {
         display:flex;
         flex-wrap: nowrap;
@@ -915,6 +936,7 @@ dd {
 
     .mapa-sucursales {
         width: 50%;
+        padding: 8px;
     }
 
 
@@ -925,28 +947,24 @@ dd {
         justify-content:space-around;
         font-size: 1.2rem;
         max-width: none;
-        margin-left: 20px;
     }
 
     .datos {
-        margin: 0 10px 20px 10px;
-        padding-right: 5px;
-    /* margin-right:  20px;
-    margin-left: 20px; */
+        margin-right:  20px;
     }
 
     .mapa {
         width: 33%;
         margin-bottom: 10px;
-        margin-left: 10px;
+        
     }
 
     .foto{
         max-width: 33%;
-        margin: 0 20px 10px 20px;
         /* margin-bottom: 10px;
         margin-left:  20px;
         margin-right:  20px; */
+        margin: 0 20px 10px 20px;
     }    
 
 } 

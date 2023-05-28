@@ -27,6 +27,12 @@ const busquedaPorDefecto = "fiction";
 
 // }
 
+function getBuscador(){
+    let buscador = `<input  id="input-busqueda" type="search" autocomplete="off" placeholder="Ingresar título, autor, género o palabra clave">
+    <button id="btn-busqueda" class="boton" onclick="buscarLibros()"> Buscar </button>
+    <button id="btn-reset-busqueda" class="boton" type="reset" onclick="resetBusqueda()">Borrar</button>`
+    document.querySelector(".buscador").innerHTML=buscador;
+}
 
 function buscarLibros(){
     let busqueda = document.getElementById("input-busqueda").value;
@@ -155,6 +161,9 @@ const getLibrosAxios = async(busqueda) => {
     }
 }
 
+
+
+getBuscador();
 
 getLibrosAxios(busquedaPorDefecto);
 
